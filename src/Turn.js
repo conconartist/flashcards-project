@@ -10,14 +10,14 @@ class Turn {
     return this.card;
   }
   evaluateGuess() {
-    if(this.userGuess === this.card.correctAnswer) {
+    if (this.userGuess === this.card.correctAnswer) {
       return true;
     } else {
       return false;
     }
   }
   giveFeedback() {
-    if(this.userGuess === this.card.correctAnswer) {
+    if (this.userGuess === this.card.correctAnswer) {
       return "Correct!"
     } else {
       return "Incorrect!"

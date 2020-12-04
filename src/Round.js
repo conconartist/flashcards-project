@@ -18,16 +18,16 @@ class Round {
     this.turnsCount++;
     const currentCard = this.returnCurrentCard();
     const turn = new Turn(guess, currentCard)
-    if(turn.evaluateGuess() && this.deck.cards.length < 1) {
+    if (turn.evaluateGuess() && this.deck.cards.length < 1) {
       this.endRound();
       this.deck.cards.shift();
-    } else if(turn.evaluateGuess()) {
-       this.deck.cards.shift();
+    } else if (turn.evaluateGuess()) {
+      this.deck.cards.shift();
     } else {
-       this.incorrectGuesses.push(currentCard.id);
-       this.deck.cards.shift();
+      this.incorrectGuesses.push(currentCard.id);
+      this.deck.cards.shift();
     }
-    return(turn.giveFeedback());
+    return (turn.giveFeedback());
   }
   calculatePercentCorrect() {
     return ((this.turnsCount - this.incorrectGuesses.length) / this.turnsCount) * 100;
