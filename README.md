@@ -14,6 +14,12 @@ FlashCard Project Repo: https://github.com/conconartist/flashcards-project
 
 Planning Project: https://github.com/conconartist/flashcards-project
 
+## Technologies Used:
+
+* JavaScript ES6
+* Node.js
+* ESLint
+
 ## Setup
 
 Clone down the repo from the GitHub project link above to your local machine.
@@ -34,12 +40,6 @@ Open files in the test directory to see each file's corresponding tests: Card-te
 **For FlashCard Game Play**
 
 Run `node index.js` from the root directory of the project to run the flashcards game. Type any number between 1-3 to answer the question and press `ENTER` to see feedback for your answer. The game will continue to ask questions until the round is complete.
-
-## Technologies Used:
-
-* JavaScript ES6
-* Node.js
-* ESLint
 
 
 ![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
